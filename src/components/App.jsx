@@ -1,16 +1,18 @@
+import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { LoaderSpinner } from './Loader/Loader';
+import { Navigation } from './Navigation';
+import { refreshUser } from 'redux/Authentication/auth.thunk';
+import { useAuth } from 'hook/useAuth/useAuth';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+  const dispatch = useDispatch();
+  const { isRefreshing } = useAuth();
+
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch]);
+
+  return isRefreshing ? <LoaderSpinner /> : <Navigation />;
 };
