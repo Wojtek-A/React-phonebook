@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useAuth } from 'hook/useAuth/useAuth';
 import { signOut } from 'redux/Authentication/auth.thunk';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { Filter } from 'Components/Filter/Filter';
+import { Filter } from 'components/Filter/Filter';
 
 export const UserMenu = () => {
   const { isAuthorized } = useAuth();
