@@ -1,0 +1,40 @@
+.contactsList {
+  max-width: 1200px;
+  margin: auto;
+}
+.contactsList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+.button {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.contact {
+  font-weight: 500;
+  height: 230px;
+  width: 230px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+.contact img {
+  margin: 10px 64px 10px 64px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact p {
+  margin: 8px auto;
+}
