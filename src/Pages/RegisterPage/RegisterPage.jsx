@@ -10,7 +10,7 @@ export const RegisterPage = () => {
   const handelSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
-    if (form.name.value.length < 3) {
+    if (form.name.length < 3) {
       Notify.failure(`Username must have more than three characters`);
         return true;
     }
