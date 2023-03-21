@@ -1,7 +1,8 @@
 import React from 'react';
 import css from './RegisterPage.module.css';
 import { useDispatch } from 'react-redux';
-import { signUp } from 'redux/Authentication/auth.thunk';
+import { signUp } from 'redux/Authentication/AuthenticationThunk';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 export const RegisterPage = () => {
   const dispatch = useDispatch();
@@ -9,6 +10,9 @@ export const RegisterPage = () => {
   const handelSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
+    if (form.name.value.length < 3) {
+      Notify.failure(`Username must have more than three characters`);
+    }
     dispatch(
       signUp({
         name: form.name.value,

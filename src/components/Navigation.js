@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomePage } from 'Pages/HomePage';
+import { HomePage } from 'Pages/HomePage/HomePage';
 import { RestrictedRoute } from './RestrictedRoute';
 import { ProtectedRoute } from './ProtectedRoute';
-import { RegisterPage } from 'Pages/RegisterPage';
-import { LoginPage } from 'Pages/LoginPage';
-import { PhonebookPage } from 'Pages/PhonebookPage';
+import { RegisterPage } from 'Pages/RegisterPage/RegisterPage';
+import { LoginPage } from 'Pages/LoginPage/LoginPage';
+import { PhonebookPage } from 'Pages/PhonebookPage/PhonebookPage';
 
 export const Navigation = () => {
   return (

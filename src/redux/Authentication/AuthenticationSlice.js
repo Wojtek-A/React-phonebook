@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { signUp, logIn, signOut, refreshUser } from './auth.thunk';
+import { signUp, logIn, signOut, refreshUser } from './AuthenticationThunk';
 
 const initialState = {
   user: { name: null, email: null },

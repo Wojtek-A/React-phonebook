@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import persistReducer from 'redux-persist/es/persistReducer';
-import { contactsReducer, filterReducer } from './Contacts/cont.slice';
+import { contactsReducer, filterReducer } from './Contacts/contactsSice';
 import {
   FLUSH,
   PAUSE,
@@ -11,7 +11,7 @@ import {
   REGISTER,
   REHYDRATE,
 } from 'redux-persist/es/constants';
-import { authReducer } from './Authentication/auth.slice';
+import { authReducer } from './Authentication/AuthenticationSlice';
 
 const myApi = {
   contacts: '/api/contacts',

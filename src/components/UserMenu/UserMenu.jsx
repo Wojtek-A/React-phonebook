@@ -3,7 +3,7 @@ import css from './UserMenu.module.css';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hook/useAuth/useAuth';
-import { signOut } from 'redux/Authentication/auth.thunk';
+import { signOut } from 'redux/Authentication/AuthenticationThunk';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Filter } from 'components/Filter/Filter';
 

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { LoaderSpinner } from './Loader/Loader';
 import { Navigation } from './Navigation';
-import { refreshUser } from 'redux/Authentication/auth.thunk';
+import { refreshUser } from 'redux/Authentication/AuthenticationThunk';
 import { useAuth } from 'hook/useAuth/useAuth';
 
 export const App = () => {

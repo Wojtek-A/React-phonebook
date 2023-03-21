@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactAction } from 'redux/Contacts/cont.operations';
-import { selectContacts } from 'redux/Contacts/cont.selectors';
+import { addContactAction } from 'redux/Contacts/contactsOperations';
+import { selectContacts } from 'redux/Contacts/contactsSelectors';
 import Select from 'react-select';
 import InputMask from 'react-input-mask';
 import css from './ContactForm.module.css';

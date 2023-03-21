@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './LoginPage.module.css';
 import { useDispatch } from 'react-redux';
-import { logIn } from 'redux/Authentication/auth.thunk';
+import { logIn } from 'redux/Authentication/AuthenticationThunk';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
