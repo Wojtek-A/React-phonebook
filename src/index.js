@@ -9,7 +9,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="goit-react-hw-08-phonebook">
+    <BrowserRouter basename="react-phonebook">
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />

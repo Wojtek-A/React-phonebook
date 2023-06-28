@@ -16,6 +16,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.passwordValidation {
+    width: 337px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
 .registerPage input {
   font-weight: 500;
   font-size: 17px;
@@ -48,4 +55,8 @@
 .registerPage button:hover {
   background-color: black;
   color: hsl(0, 0%, 100%);
+}
+.errorText{
+  width: 307px;
+  font-size: 15px;
 }

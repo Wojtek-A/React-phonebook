@@ -23,7 +23,7 @@ export const UserMenu = () => {
       <h1>PHONEBOOK</h1>
       <Filter />
       <div className={css.user}>
-        <p>USER: {mail.email}</p>
+        <p>USER: {mail.name}</p>
         {isAuthorized && (
           <>
             <Link to="/">
